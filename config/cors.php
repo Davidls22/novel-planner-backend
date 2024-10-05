@@ -19,8 +19,8 @@ return [
     | Allowed Methods
     |--------------------------------------------------------------------------
     |
-    | Specify the methods that are allowed for cross-origin requests. This could
-    | be an array of methods like `['GET', 'POST']` or use `['*']` to allow all methods.
+    | Specify the methods that are allowed for cross-origin requests.
+    | This could be an array of methods like `['GET', 'POST']` or use `['*']` to allow all methods.
     |
     */
 
@@ -36,7 +36,7 @@ return [
     |
     */
 
-    'allowed_origins' => ['http://localhost:3000'],
+    'allowed_origins' => ['http://localhost:3000', 'https://novel-planner-frontend-834t.vercel.app'],
 
     /*
     |--------------------------------------------------------------------------
@@ -48,7 +48,7 @@ return [
     |
     */
 
-    'allowed_headers' => ['*'],
+    'allowed_headers' => ['Content-Type', 'X-Requested-With', 'Authorization', '*'], // Add '*' if needed
 
     /*
     |--------------------------------------------------------------------------
